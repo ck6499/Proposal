@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <audio id="myAudio" src="song.mp3" autoplay></audio>
+        <button onclick="playAudio()" type="button">Play Music</button>
+        <h1>Dear NAKULU</h1>
+        <p>
+            From the moment we met, you've brought joy, laughter, and love into my life. I can't imagine my days without you by my side.
+        </p>
+        <p>
+            Will you make me the happiest person in the world and be my girlfriend?
+        </p>
+        <p>Yours always,<br>Chinu Kumar</p>
+        <div class="cat-images">
+            <img src="IMG_20231216_111457.jpg" alt="Cute cat">
+            <img src="IMG_20231218_143517.jpg" alt="Adorable cat">
+            <img src="photo_6168234449590926190_y.jpg" alt="Adorables cat">
+            <!-- Add more cat images as you like -->
+        </div>
+    </div>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.currentTime = 0;
+            }
+        }
+    </script>
+</body>
+</html>
